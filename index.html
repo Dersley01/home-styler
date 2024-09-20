@@ -8,6 +8,10 @@
     <title>Navbar and Footer</title>
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
 </head>
 <body>
@@ -27,7 +31,7 @@
                 
             </div>
             <div class="cta">
-                <a href="/signupform" class="cta-button">Contact</a>
+                <a href="#" class="cta-button">Contact</a>
             </div>
             <button class="menu-toggle" onclick="toggleMenu()">
                 <span id="menu-icon" class="icon">☰</span>
@@ -48,11 +52,92 @@
 
     <main class="main-container">
         <!-- Main content of the page -->
+          <!---Hero section-->
+            <div class="hero-section">
+                <div class="text-content">
+                    <h1 class="hero-title">Lets make your Interior <span>Better</span></h1>
+                    <p class="hero-description">Transform your space with our expert interior design services, tailored to reflect your unique style and vision.</p>
+                    <button class="hero-button">Contact</button>
+                </div>
+                <div class="image-content">
+                    <img src="/images/home/heroimage.jpeg" alt="Hero Image" class="hero-image">
+                </div>
+            </div>
+
+            <!--About Section-->
+            <div class="abouthome-container">
+                <h1 class="abouthome-title">
+                    What We <span>Do</span>
+                </h1>
+              
+                <p class="abouthome-description">
+                    we offer inspiration and resources for all your interior design projects. From tips and DIY ideas to expert advice, we help you create spaces that reflect your style!
+                </p>
+                <div class="scroll-container">
+                    <div class="scroll-header">
+                        <p> See all</p>
+                        <div class="scroll-button-group">
+                            <button class="scrollarrow-button" onclick="handleArrowClick('left')">&#9664;</button>
+                            <button class="scrollarrow-button" onclick="handleArrowClick('right')">&#9654;</button>
+                        </div>
+                    </div>
+                    
+                    <div class="scrollcard-container" id="cardContainer"></div>
+                </div>
+                <div class="explore-more">
+                    <a href="#" class="explore-button">Explore More</a>
+                </div>
+            </div>
+            
+            <!---PRODUCT SECTION-->
+            <div class="abouthome-container">
+                <h1 class="abouthome-title">
+                    Our <span>Products</span>
+                </h1>
+            
+                <div class="producthome-container"></div>
+                <div class="explore-more">
+                    <a href="#" class="explore-button">Explore More</a>
+                </div>
+           </div>
+            <!---FAQ SECTION-->
+            <div class="abouthome-container">
+                <h1 class="abouthome-title">
+                    Frequently Asked <span>Questions</span>
+                </h1>
+            <div class="faq-container">
+                
+                <div class="faq-accordion" id="faq-accordion"></div>
+            </div>
+            </div>
+        
+
+            <!----TESTIMONY-->
+
+            <div class="testimonial-container">
+                <h1>Here's some of the feedback that our clients have been giving us</h1>
+                <div class="testimonial-slider">
+                    <button class="arrow-left">
+                        <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg> -->
+                        <
+                    </button>
+                    <div class="testimonial-items" id="testimonial-items"></div>
+                    <button class="arrow-right">
+                        <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg> -->
+                        >
+                    </button>
+                </div>
+            </div>
+  
     </main>
 
     <!-- Footer  -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
             <div class="footer-row">
                 <div class="footer-logosection">
                     <h2>Home Styler</h2>

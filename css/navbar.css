@@ -7,7 +7,7 @@
 
 /* Container */
 .nav-container {
- 
+    font-family: "Montserrat", sans-serif;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -17,12 +17,13 @@
 
 /* Navbar */
 .navbar {
-    background-color: white;
+    background-color: rgb(250, 206, 206);
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 50;
     padding: 1rem;
+    
 }
 
 
@@ -64,7 +65,7 @@
     background-color: #b70eeb;
     border: 2px solid #c214e9;
     color: #FFF;
-    padding: 0.5rem 1.5rem;
+    padding: 0.7rem 1.9rem;
     border-radius:15px;
     text-decoration: none;
     font-size: 15px;
@@ -138,6 +139,10 @@
 
     .nav-container{
         padding: 0 2rem;
+    }
+
+    .navbar{
+        padding: 1.5rem;
     }
     .nav-links {
         display: flex;
